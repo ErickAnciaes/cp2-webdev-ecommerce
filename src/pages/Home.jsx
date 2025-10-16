@@ -1,8 +1,13 @@
+import { Outlet } from "react-router-dom";
+import Navbar from "../components/Navbar";
+
 export default function Home() {
-  
   return (
-    <div>
-        <h2 className="text-2xl font-bold mb-4">Bem-vindo ao Fiap Commerce!</h2>
+    <div className="min-h-screen bg-black text-white">
+      <Navbar />
+      <main className="p-6">
+        <Outlet />
+      </main>
     </div>
   );
 }
